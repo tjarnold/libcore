@@ -66,6 +66,9 @@ $(foreach dir, \
 core_c_includes := $(sort libcore/include $(LOCAL_C_INCLUDES) $(JNI_H_INCLUDE))
 core_shared_libraries := $(sort $(LOCAL_SHARED_LIBRARIES))
 core_static_libraries := $(sort $(LOCAL_STATIC_LIBRARIES))
+core_cflags := -fno-strict-aliasing
+core_cppflags := -fno-strict-aliasing
+
 
 
 #
